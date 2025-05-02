@@ -2,7 +2,7 @@
 
 The periodic table view allows users to be able to build molecule structures. There is also a preset list as well. All data is mock data. The rendering of molecules is done through Three.
 
-## Periodic table
+## 🔬 Periodic table
 
 The mock data is imported into the component and then sorted based on the type of element it is.
 
@@ -14,7 +14,7 @@ const actinides = elements.filter((e) => e.specialRow === 2);
 
 These values are then mapped over in a grid and an onClick handler enables the user to add these elements to the view.
 
-## Molecule Viewer
+## ⚗️ Molecule Viewer
 In this component, the canvas is created to render the molecules selected by the user.
 
 ```ts
@@ -44,7 +44,7 @@ This is where the user is able to use the hook to render the molecules, select f
 
 - Usage: `const { molecule, selectedElement, setSelectedElement, addAtom, resetMolecule, loadPreset } = useMoleculeBuilder()`
 
-#### Molecule
+#### ⚗️ Molecule
 
 ```ts
 const [molecule, setMolecule] = useState<Molecule>({
@@ -53,7 +53,7 @@ const [molecule, setMolecule] = useState<Molecule>({
 });
 ```
 
-#### selectedElement
+#### ⚗️ selectedElement
 
 ```ts
 const [selectedElement, setSelectedElement] = useState<ElementData | null>(
@@ -61,7 +61,7 @@ const [selectedElement, setSelectedElement] = useState<ElementData | null>(
 );
 ```
 
-#### addAtom
+#### ⚗️ addAtom
 
 This function sets the position and then pushes the new atom or if there are multiple which form a bond.
 
@@ -98,7 +98,7 @@ const addAtom = () => {
 };
 ```
 
-#### resetMolecule
+#### ⚗️ resetMolecule
 
 ```ts
 // Reset the molecule
@@ -107,7 +107,7 @@ const resetMolecule = () => {
 };
 ```
 
-#### loadPreset
+#### ⚗️ loadPreset
 
 ```ts
 // Load a preset molecule
@@ -120,6 +120,6 @@ const loadPreset = (preset: PresetMolecule) => {
 };
 ```
 
-## Testing
+## ⚙️ Testing
 
 `npm run test`
