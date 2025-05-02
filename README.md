@@ -122,4 +122,4 @@ const loadPreset = (preset: PresetMolecule) => {
 
 ## Testing
 
-[TO DO]
+`npm run test`
