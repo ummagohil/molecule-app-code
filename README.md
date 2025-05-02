@@ -37,7 +37,7 @@ export default function MoleculeViewer({
 
 There are multiple nested components within this component however this enables you to have `refs` for each element, which help with identifying the type of element.
 
-## Molecule Builder
+##  ⚗️ Molecule Builder
 This is where the user is able to use the hook to render the molecules, select functionality and where the `MoleculeViewer` component comes into play.
 
 ### `use-molecule-builder` hook
